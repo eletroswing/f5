@@ -240,7 +240,7 @@ def preprocess_ref_audio_text(ref_audio_orig, ref_text, show_info=print, device=
     ref_text_ipa = phonemize_text(ref_text)
     show_info(f"Phonemized reference text: {ref_text_ipa}")
 
-    return ref_audio, ref_text_ipa
+    return ref_audio, ref_text
 
 
 # infer process: chunk text -> infer batches [i.e. infer_batch_process()]
